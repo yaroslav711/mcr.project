@@ -1,6 +1,6 @@
+# -*- coding: utf-8 -*-
 import json
 from collections import Counter
-# -*- coding: utf-8 -*-
 
 def git_data():
     with open("C:\\Users\\Ярослав\\Downloads\\GitStats.json", encoding='utf-8') as file:
