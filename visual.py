@@ -14,12 +14,6 @@ times = sorted(dict_git + dict_zulip + dict_jitsi + dict_session)
 git_count, zulip_count, jitsi_count, session_count = [], [], [], []
 commits, messages, classes, session  = len(dict_git), len(dict_zulip), len(dict_jitsi), len(dict_session)
 
-def max(a):
-    m = 0
-    for i in range(len(a)):
-        if a[i] > m: m = a[i]
-    return m
-
 def give_mark():
     return round(git_data()['registration'] + zulip_data()['registration'] + (len(dict_git) > 0) + (len(dict_zulip) > 0) + 0.5*(len(jitsi_data()['dictionary']) + len(jitsi_session()['dictionary']) + 0.01))
 
